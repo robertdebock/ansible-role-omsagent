@@ -1,0 +1,8 @@
+---
+# handlers file for omsagent
+- name: restart omsagent
+  service:
+    name: "{{ omsagent_service }}"
+    state: restarted
+  when:
+    - ansible_virtualization_type != "docker"

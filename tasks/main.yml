@@ -1,0 +1,36 @@
+---
+# tasks file for omsagent
+- name: install requirements
+  package:
+    name: "{{ omsagent_requirements }}"
+    state: present
+  register: omsagent_install_requirements
+
+- name: download installation script
+  get_url:
+    url: "{{ omsagent_url }}"
+    dest: "{{ omsagent_tmp }}"
+    mode: "0750"
+
+- name: ensure directory exist
+  file:
+    path: /etc/opt/microsoft/omsagent/
+    state: directory
+    recurse: yes
+    mode: "0755"
+
+- name: set proxy configuration
+  template:
+    src: proxy.conf.j2
+    dest: /etc/opt/microsoft/omsagent/proxy.conf
+    owner: "{{ omsagent_owner }}"
+    group: "{{ omsagent_group }}"
+    mode: "0640"
+  when:
+    - omsagent_proxy is defined
+
+- name: run script (can take a couple of minutes)
+  command: "{{ omsagent_tmp }}/onboard_agent.sh"
+  args:
+    creates: omsagent-{{ omsagent_version }}.universal.{{ omsagent_creates_pattern }}.sh
+    chdir: "{{ omsagent_tmp }}"

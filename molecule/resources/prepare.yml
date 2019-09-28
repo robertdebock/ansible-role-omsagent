@@ -12,3 +12,5 @@
       users_user_list:
         - name: omsagent
           group: omiusers
+    - role: robertdebock.auditd
+    - role: robertdebock.cron

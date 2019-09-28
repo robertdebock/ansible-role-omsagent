@@ -1,3 +1,5 @@
 ---
 - robertdebock.bootstrap
 - robertdebock.users
+- robertdebock.auditd
+- robertdebock.cron

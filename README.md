@@ -37,6 +37,8 @@ The machine you are running this on, may need to be prepared.
       users_user_list:
         - name: omsagent
           group: omiusers
+    - role: robertdebock.auditd
+    - role: robertdebock.cron
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
@@ -89,6 +91,8 @@ The following roles can be installed to ensure all requirements are met, using `
 ---
 - robertdebock.bootstrap
 - robertdebock.users
+- robertdebock.auditd
+- robertdebock.cron
 
 ```
 

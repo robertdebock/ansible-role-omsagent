@@ -33,3 +33,11 @@
   args:
     creates: omsagent-{{ omsagent_version }}.universal.{{ omsagent_creates_pattern }}.sh
     chdir: "{{ omsagent_tmp }}"
+
+- name: start omi service
+  service:
+    name: omi
+    state: started
+    enabled: true
+  when:
+    - ansible_virtualization_type != "docker"

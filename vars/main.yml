@@ -1,6 +1,14 @@
 ---
 # vars file for omsagent
 _omsagent_requirements:
+  Alpine:
+    - libgcc
+    - linux-pam
+    - python
+    - which
+    - curl
+    - openssl
+    - wget
   default:
     - glibc
     - openssl

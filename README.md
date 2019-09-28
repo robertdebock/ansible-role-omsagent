@@ -1,7 +1,7 @@
 omsagent
 =========
 
-<img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/>
+<img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/><img src="https://raw.githubusercontent.com/robertdebock/ansible-role-omsagent/master/meta/logo.png" alt="Project logo" width="40" height="40" align="left"/>
 <a href="https://travis-ci.org/robertdebock/ansible-role-omsagent"><img src="https://travis-ci.org/robertdebock/ansible-role-omsagent.svg?branch=master" alt="Build status" align="left"/></a>
 
 Install Microsoft omsagent (Log Analytics agent) on your system.
@@ -136,7 +136,13 @@ This role has been tested against the following distributions and Ansible versio
 A single star means the build may fail, it's marked as an experimental build.
 
 
+Included version(s)
+-------------------
 
+This role [refers to a version](https://github.com/robertdebock/ansible-role-omsagent/blob/master/defaults/main.yml) released by Microsoft. Check the released version(s) here:
+- [OMS Agent for Linux GA](https://github.com/microsoft/OMS-Agent-for-Linux/releases).
+
+This version reference means a role may get outdated. Monthly tests occur to see if [bit-rot](https://en.wikipedia.org/wiki/Software_rot) occured. If you however find a problem, please create an issue, I'll get on it as soon as possible.
 
 Testing
 -------

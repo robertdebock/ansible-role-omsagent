@@ -9,6 +9,14 @@ _omsagent_requirements:
     - curl
     - openssl
     - wget
+  Debian:
+    - libc
+    - openssl
+    - curl
+    - python-ctypes
+    - pam
+    - wget
+    - which
   default:
     - glibc
     - openssl

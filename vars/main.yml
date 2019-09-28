@@ -15,6 +15,7 @@ _omsagent_requirements:
     - curl
     - python
     - wget
+    - gnupg
   Fedora:
     - glibc
     - openssl

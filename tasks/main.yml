@@ -14,7 +14,7 @@
 
 - name: ensure directory exist
   file:
-    path: /etc/opt/microsoft/omsagent/
+    path: /etc/opt/microsoft/omsagent
     state: directory
     recurse: yes
     mode: "0755"

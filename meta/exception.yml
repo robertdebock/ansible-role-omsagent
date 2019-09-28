@@ -1,0 +1,6 @@
+---
+exceptions:
+  - variation: Archlinux
+    reason: Only RPM and DPKG is supported by Microsoft.
+  - variation: Archlinux
+    reason: Only RPM and DPKG is supported by Microsoft.

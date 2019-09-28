@@ -1,14 +1,6 @@
 ---
 # vars file for omsagent
 _omsagent_requirements:
-  Alpine:
-    - libgcc
-    - linux-pam
-    - python
-    - which
-    - curl
-    - openssl
-    - wget
   CentOS:
     - glibc
     - openssl
@@ -18,7 +10,7 @@ _omsagent_requirements:
     - wget
     - which
   Debian:
-    - libc
+    - libc-bin
     - openssl
     - curl
     - python-ctypes
@@ -34,7 +26,7 @@ _omsagent_requirements:
     - wget
     - which
   Ubuntu:
-    - libc
+    - libc-bin
     - openssl
     - curl
     - python-ctypes

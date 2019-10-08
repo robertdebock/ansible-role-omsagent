@@ -6,6 +6,7 @@
 
   roles:
     - role: robertdebock.bootstrap
+    - role: robertdebock.core_dependencies
     - role: robertdebock.users
       users_group_list:
         - name: omiusers

@@ -1,5 +1,6 @@
 ---
 - robertdebock.bootstrap
+- robertdebock.core_dependencies
 - robertdebock.users
 - robertdebock.auditd
 - robertdebock.cron

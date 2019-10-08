@@ -1,6 +1,8 @@
 ---
 exceptions:
-  - variation: Archlinux
+  - variation: Alpine
     reason: Only RPM and DPKG is supported by Microsoft.
   - variation: Archlinux
     reason: Only RPM and DPKG is supported by Microsoft.
+  - variation: CentOS 8
+    reason: Python is not configured or Python does not support ctypes on this system.

@@ -130,7 +130,7 @@ This role has been tested against the following distributions and Ansible versio
 |alpine-latest|no|no|no*|
 |archlinux|no|no|no*|
 |centos-7|yes|yes|yes*|
-|centos-latest|yes|yes|yes*|
+|centos-latest|no|no|no*|
 |debian-stable|yes|yes|yes*|
 |debian-unstable*|yes|yes|yes*|
 |fedora-latest|yes|yes|yes*|
@@ -149,8 +149,9 @@ Some variarations of the build matrix do not work. These are the variations and 
 
 | variation                 | reason                 |
 |---------------------------|------------------------|
+| Alpine | Only RPM and DPKG is supported by Microsoft. |
 | Archlinux | Only RPM and DPKG is supported by Microsoft. |
-| Archlinux | Only RPM and DPKG is supported by Microsoft. |
+| CentOS 8 | Python is not configured or Python does not support ctypes on this system. |
 
 Included version(s)
 -------------------

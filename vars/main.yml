@@ -13,13 +13,11 @@ _omsagent_requirements:
     - libc-bin
     - openssl
     - curl
-    - python
     - wget
   Fedora:
     - glibc
     - openssl
     - curl
-    - python
     - pam
     - wget
     - which

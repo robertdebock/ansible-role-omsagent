@@ -1,6 +1,0 @@
----
-# handlers file for omsagent
-- name: restart omsagent
-  service:
-    name: "{{ omsagent_service }}"
-    state: restarted

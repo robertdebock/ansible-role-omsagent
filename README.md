@@ -39,6 +39,7 @@ The machine you are running this on, may need to be prepared.
         - name: omsagent
           group: omiusers
     - role: robertdebock.auditd
+      auditd_local_events: "no"
     - role: robertdebock.cron
 ```
 

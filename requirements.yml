@@ -1,6 +1,9 @@
 ---
-- robertdebock.bootstrap
-- robertdebock.core_dependencies
-- robertdebock.users
 - robertdebock.auditd
+- robertdebock.bootstrap
+- robertdebock.buildtools
+- robertdebock.core_dependencies
 - robertdebock.cron
+- robertdebock.epel
+- robertdebock.python_pip
+- robertdebock.users

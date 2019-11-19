@@ -34,8 +34,8 @@
     creates: omsagent-{{ omsagent_version }}.universal.{{ omsagent_creates_pattern }}.sh
     chdir: "{{ omsagent_tmp }}"
 
-- name: start omi service
+- name: start omid service
   service:
-    name: omi
+    name: omid
     state: started
     enabled: true

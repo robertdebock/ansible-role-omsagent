@@ -16,8 +16,3 @@
     - role: robertdebock.auditd
       auditd_local_events: "no"
     - role: robertdebock.cron
-    - role: robertdebock.buildtools
-    - role: robertdebock.epel
-    - role: robertdebock.python_pip
-      python_pip_modules:
-        - name: ctypes

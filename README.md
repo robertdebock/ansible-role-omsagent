@@ -55,7 +55,7 @@ These variables are set in `defaults/main.yml`:
 # Extra documentation on Log Analytic Agent is available on:
 # https://docs.microsoft.com/en-us/azure/azure-monitor/platfrom/logs-analytics-agent
 
-omsagent_version: 1.12.2-0
+omsagent_version: 1.12.15-0
 
 # omsagent_tmp directory is where the installer script is placed.
 # The installer downloads a large file (125MB) to this directory.
@@ -91,11 +91,11 @@ The following roles can be installed to ensure all requirements are met, using `
 
 ```yaml
 ---
+- robertdebock.auditd
 - robertdebock.bootstrap
 - robertdebock.core_dependencies
-- robertdebock.users
-- robertdebock.auditd
 - robertdebock.cron
+- robertdebock.users
 
 ```
 
@@ -120,9 +120,6 @@ This role has been tested on these [container images](https://hub.docker.com/):
 |debian|unstable|yes|
 |debian|latest|no|
 |centos|7|no|
-|centos|latest|no|
-|fedora|latest|no|
-|fedora|rawhide|yes|
 |opensuse|latest|no|
 |ubuntu|latest|no|
 

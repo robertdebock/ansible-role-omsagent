@@ -41,5 +41,7 @@
 - name: start and enable omid service
   service:
     name: omid
-    state: "{{ omsagent_service_state | default(omit) }}"
+    state: "{{ omsagent_service_state }}"
     enabled: true
+  when:
+    - omsagent_service_state | length

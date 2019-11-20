@@ -115,13 +115,9 @@ This role has been tested on these [container images](https://hub.docker.com/):
 
 |container|tag|allow_failures|
 |---------|---|--------------|
-|amazonlinux|1|no|
 |amazonlinux|latest|no|
-|debian|unstable|yes|
-|debian|latest|no|
 |centos|7|no|
 |opensuse|latest|no|
-|ubuntu|latest|no|
 
 This role has been tested on these Ansible versions:
 
@@ -136,9 +132,12 @@ Some variarations of the build matrix do not work. These are the variations and 
 
 | variation                 | reason                 |
 |---------------------------|------------------------|
-| Alpine | Only RPM and DPKG is supported by Microsoft. |
-| Archlinux | Only RPM and DPKG is supported by Microsoft. |
-| CentOS 8 | Python is not configured or Python does not support ctypes on this system. |
+| alpine | Only RPM and DPKG is supported by Microsoft. |
+| amazonlinux:1 | Dependency not available: ansible-role-auditd |
+| archlinux | Only RPM and DPKG is supported by Microsoft. |
+| centos:8 | Python is not configured or Python does not support ctypes on this system. |
+| ubuntu | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |
+| debian | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |
 
 Included version(s)
 -------------------
@@ -193,6 +192,7 @@ This role uses the following modules:
 - file
 - get_url
 - package
+- pause
 - service
 - template
 ```

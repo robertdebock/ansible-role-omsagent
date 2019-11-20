@@ -1,8 +1,14 @@
 ---
 exceptions:
-  - variation: Alpine
-    reason: Only RPM and DPKG is supported by Microsoft.
-  - variation: Archlinux
-    reason: Only RPM and DPKG is supported by Microsoft.
-  - variation: CentOS 8
-    reason: Python is not configured or Python does not support ctypes on this system.
+  - variation: alpine
+    reason: "Only RPM and DPKG is supported by Microsoft."
+  - variation: amazonlinux:1
+    reason: "Dependency not available: ansible-role-auditd"
+  - variation: archlinux
+    reason: "Only RPM and DPKG is supported by Microsoft."
+  - variation: centos:8
+    reason: "Python is not configured or Python does not support ctypes on this system."
+  - variation: ubuntu
+    reason: "Python is not configured or Python does not support ctypes on this system, installation cannot continue."
+  - variation: debian
+    reason: "Python is not configured or Python does not support ctypes on this system, installation cannot continue."

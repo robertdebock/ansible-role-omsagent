@@ -2,7 +2,7 @@
 exceptions:
   - variation: alpine
     reason: "Only RPM and DPKG is supported by Microsoft."
-  - variation: amazonlinux:1
+  - variation: amazonlinux
     reason: "Dependency not available: ansible-role-auditd"
   - variation: archlinux
     reason: "Only RPM and DPKG is supported by Microsoft."

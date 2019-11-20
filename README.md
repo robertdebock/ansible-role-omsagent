@@ -115,7 +115,6 @@ This role has been tested on these [container images](https://hub.docker.com/):
 
 |container|tag|allow_failures|
 |---------|---|--------------|
-|amazonlinux|latest|no|
 |centos|7|no|
 |opensuse|latest|no|
 
@@ -133,7 +132,7 @@ Some variarations of the build matrix do not work. These are the variations and 
 | variation                 | reason                 |
 |---------------------------|------------------------|
 | alpine | Only RPM and DPKG is supported by Microsoft. |
-| amazonlinux:1 | Dependency not available: ansible-role-auditd |
+| amazonlinux | Dependency not available: ansible-role-auditd |
 | archlinux | Only RPM and DPKG is supported by Microsoft. |
 | centos:8 | Python is not configured or Python does not support ctypes on this system. |
 | ubuntu | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |

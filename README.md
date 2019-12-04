@@ -146,7 +146,6 @@ This role [refers to a version](https://github.com/robertdebock/ansible-role-oms
 - [OMS Agent for Linux GA](https://github.com/microsoft/OMS-Agent-for-Linux/releases).
 
 This version reference means a role may get outdated. Monthly tests occur to see if [bit-rot](https://en.wikipedia.org/wiki/Software_rot) occured. If you however find a problem, please create an issue, I'll get on it as soon as possible.
-
 Testing
 -------
 

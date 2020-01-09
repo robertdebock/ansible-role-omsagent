@@ -4,6 +4,8 @@ omsagent
 <img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/><img src="https://raw.githubusercontent.com/robertdebock/ansible-role-omsagent/master/meta/logo.png" alt="Project logo" width="40" height="40" align="left"/>
 <a href="https://travis-ci.org/robertdebock/ansible-role-omsagent"> <img src="https://travis-ci.org/robertdebock/ansible-role-omsagent.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/43607"/> <img src="https://img.shields.io/ansible/quality/43607"/>
 
+<a href="https://github.com/robertdebock/ansible-role-omsagent/actions"><img src="https://github.com/robertdebock/ansible-role-omsagent/workflows/GitHub%20Action/badge.svg"/></a>
+
 Install Microsoft omsagent (Log Analytics agent) on your system.
 
 Example Playbook

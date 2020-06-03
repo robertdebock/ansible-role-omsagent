@@ -1,4 +1,4 @@
-# omsagent
+# [omsagent](#omsagent)
 
 Install Microsoft omsagent (Log Analytics agent) on your system.
 
@@ -6,7 +6,7 @@ Install Microsoft omsagent (Log Analytics agent) on your system.
 |------|------|-------|---------|
 |[![travis](https://travis-ci.com/robertdebock/ansible-role-omsagent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-omsagent)|[![github](https://github.com/robertdebock/ansible-role-omsagent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-omsagent/actions)|[![quality](https://img.shields.io/ansible/quality/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|[![downloads](https://img.shields.io/ansible/role/d/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|
 
-## Example Playbook
+## [Example Playbook](#example-playbook)
 
 This example is taken from `molecule/resources/converge.yml` and is tested on each push, pull request and release.
 ```yaml
@@ -57,7 +57,7 @@ For verification `molecule/resources/verify.yml` run after the role has been app
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
-## Role Variables
+## [Role Variables](#role-variables)
 
 These variables are set in `defaults/main.yml`:
 ```yaml
@@ -92,7 +92,7 @@ omsagent_domain: []
 # omsagent_proxy: "https://username:password@proxyserver:proxyport"
 ```
 
-## Requirements
+## [Requirements](#requirements)
 
 - Access to a repository containing packages, likely on the internet.
 - A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
@@ -109,14 +109,14 @@ The following roles can be installed to ensure all requirements are met, using `
 
 ```
 
-## Context
+## [Context](#context)
 
 This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://robertdebock.nl/) for further information.
 
 Here is an overview of related roles:
 ![dependencies](https://raw.githubusercontent.com/robertdebock/drawings/artifacts/omsagent.png "Dependency")
 
-## Compatibility
+## [Compatibility](#compatibility)
 
 This role has been tested on these [container images](https://hub.docker.com/u/robertdebock):
 
@@ -131,7 +131,7 @@ The minimum version of Ansible required is 2.8 but tests have been done to:
 - The current version.
 - The development version.
 
-## Exceptions
+## [Exceptions](#exceptions)
 
 Some variarations of the build matrix do not work. These are the variations and reasons why the build won't work:
 
@@ -144,13 +144,13 @@ Some variarations of the build matrix do not work. These are the variations and 
 | ubuntu | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |
 | debian | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |
 
-## Included version(s)
+## [Included version(s)](#included-versions)
 
 This role [refers to a version](https://github.com/robertdebock/ansible-role-omsagent/blob/master/defaults/main.yml) released by Microsoft. Check the released version(s) here:
 - [OMS Agent for Linux GA](https://github.com/microsoft/OMS-Agent-for-Linux/releases).
 
 This version reference means a role may get outdated. Monthly tests occur to see if [bit-rot](https://en.wikipedia.org/wiki/Software_rot) occured. If you however find a problem, please create an issue, I'll get on it as soon as possible.
-## Testing
+## [Testing](#testing)
 
 [Unit tests](https://travis-ci.com/robertdebock/ansible-role-omsagent) are done on every commit, pull request, release and periodically.
 
@@ -184,12 +184,12 @@ image="centos" tox
 image="debian" tag="stable" tox
 ```
 
-## License
+## [License](#license)
 
 Apache-2.0
 
 
-## Author Information
+## [Author Information](#author-information)
 
 [Robert de Bock](https://robertdebock.nl/)
 

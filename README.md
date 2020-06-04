@@ -2,9 +2,9 @@
 
 Install Microsoft omsagent (Log Analytics agent) on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-omsagent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-omsagent)|[![github](https://github.com/robertdebock/ansible-role-omsagent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-omsagent/actions)|[![quality](https://img.shields.io/ansible/quality/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|[![downloads](https://img.shields.io/ansible/role/d/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-omsagent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-omsagent)|[![github](https://github.com/robertdebock/ansible-role-omsagent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-omsagent/actions)|[![quality](https://img.shields.io/ansible/quality/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|[![downloads](https://img.shields.io/ansible/role/d/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-omsagent.svg)](https://github.com/robertdebock/ansible-role-omsagent/releases/)|
 
 ## [Example Playbook](#example-playbook)
 

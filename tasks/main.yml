@@ -12,7 +12,7 @@
   get_url:
     url: "{{ omsagent_url }}"
     dest: "{{ omsagent_tmp }}"
-    mode: "0750"
+    mode: "750"
   register: omsagent_download_installation_script
   until: omsagent_download_installation_script is succeeded
   retries: 3
@@ -29,7 +29,7 @@
     dest: /etc/opt/microsoft/omsagent/proxy.conf
     owner: "{{ omsagent_owner }}"
     group: "{{ omsagent_group }}"
-    mode: "0640"
+    mode: "640"
   when:
     - omsagent_proxy is defined
 

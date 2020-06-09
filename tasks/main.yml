@@ -47,6 +47,6 @@
   service:
     name: omid
     state: "{{ omsagent_service_state }}"
-    enabled: true
+    enabled: yes
   when:
     - omsagent_service_state | length

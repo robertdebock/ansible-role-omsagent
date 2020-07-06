@@ -63,6 +63,7 @@ These variables are set in `defaults/main.yml`:
 ```yaml
 ---
 # defaults file for omsagent
+
 # Extra documentation on Log Analytic Agent is available on:
 # https://docs.microsoft.com/en-us/azure/azure-monitor/platfrom/logs-analytics-agent
 

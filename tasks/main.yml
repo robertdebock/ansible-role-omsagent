@@ -7,18 +7,12 @@
   package:
     name: "{{ omsagent_requirements }}"
     state: present
-  register: omsagent_install_requirements
-  until: omsagent_install_requirements is succeeded
-  retries: 3
 
 - name: download installation script
   get_url:
     url: "{{ omsagent_url }}"
     dest: "{{ omsagent_tmp }}"
     mode: "750"
-  register: omsagent_download_installation_script
-  until: omsagent_download_installation_script is succeeded
-  retries: 3
 
 - name: ensure directory exist
   file:

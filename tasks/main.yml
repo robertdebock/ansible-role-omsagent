@@ -18,7 +18,6 @@
   file:
     path: /etc/opt/microsoft/omsagent
     state: directory
-    recurse: yes
     mode: "0755"
 
 - name: set proxy configuration

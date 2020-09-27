@@ -67,7 +67,7 @@ These variables are set in `defaults/main.yml`:
 # Extra documentation on Log Analytic Agent is available on:
 # https://docs.microsoft.com/en-us/azure/azure-monitor/platfrom/logs-analytics-agent
 
-omsagent_version: 1.13.7-0
+omsagent_version: 1.13.9-0
 
 # omsagent_tmp directory is where the installer script is placed.
 # The installer downloads a large file (125MB) to this directory.

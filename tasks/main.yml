@@ -12,7 +12,7 @@
   get_url:
     url: "{{ omsagent_url }}"
     dest: "{{ omsagent_tmp }}"
-    mode: "750"
+    mode: "755"
 
 - name: ensure directory exist
   file:

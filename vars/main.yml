@@ -10,6 +10,14 @@ _omsagent_requirements:
     - pam
     - wget
     - which
+  Suse:
+    - glibc
+    - openssl
+    - curl
+    - python3-ctypeslib2
+    - pam
+    - wget
+    - which
 
 omsagent_requirements: "{{ _omsagent_requirements[ansible_distribution] | default(_omsagent_requirements[ansible_os_family] | default(_omsagent_requirements['default'])) }}"
 

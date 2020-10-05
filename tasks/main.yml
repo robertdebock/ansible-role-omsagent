@@ -36,7 +36,7 @@
     creates: omsagent-{{ omsagent_version }}.universal.{{ omsagent_creates_pattern }}.sh
     chdir: "{{ omsagent_tmp }}"
 
-- name: wait for omid to start from script
+- name: wait for the script to finish.
   pause:
     seconds: 60
 

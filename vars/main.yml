@@ -14,7 +14,7 @@ _omsagent_requirements:
     - glibc
     - openssl
     - curl
-    - python3-ctypeslib2
+    - python3-base
     - pam
     - wget
     - which

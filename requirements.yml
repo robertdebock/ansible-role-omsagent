@@ -1,6 +1,7 @@
 ---
-- robertdebock.auditd
-- robertdebock.bootstrap
-- robertdebock.core_dependencies
-- robertdebock.cron
-- robertdebock.users
+roles:
+  - name: robertdebock.auditd
+  - name: robertdebock.bootstrap
+  - name: robertdebock.core_dependencies
+  - name: robertdebock.cron
+  - name: robertdebock.users

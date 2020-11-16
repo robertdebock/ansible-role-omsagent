@@ -3,28 +3,24 @@
   assert:
     that:
       - omsagent_version is defined
-      - omsagent_version | length > 0
     quiet: yes
 
 - name: test if omsagent_tmp is set correctly
   assert:
     that:
       - omsagent_tmp is defined
-      - omsagent_tmp | length > 0
     quiet: yes
 
 - name: test if omsagent_owner is set correctly
   assert:
     that:
       - omsagent_owner is defined
-      - omsagent_owner | length > 0
     quiet: yes
 
 - name: test if omsagent_group is set correctly
   assert:
     that:
       - omsagent_group is defined
-      - omsagent_group | length > 0
     quiet: yes
 
 - name: test if omsagent_id is set correctly

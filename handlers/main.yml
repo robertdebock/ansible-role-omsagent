@@ -1,0 +1,6 @@
+---
+# handlers file for omsagent
+
+- name: wait for the script to finish
+  pause:
+    seconds: 60

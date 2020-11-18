@@ -36,10 +36,11 @@
   args:
     creates: omsagent-{{ omsagent_version }}.universal.{{ omsagent_creates_pattern }}.sh
     chdir: "{{ omsagent_tmp }}"
+  notify:
+    - wait for the script to finish
 
-- name: wait for the script to finish.
-  pause:
-    seconds: 60
+- name: flush handlers
+  meta: flush_handlers
 
 - name: start and enable omid service
   service:

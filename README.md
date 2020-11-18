@@ -108,7 +108,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 
 |container|tags|
 |---------|----|
-|el|7|
+|el|7, 8|
 |opensuse|all|
 
 The minimum version of Ansible required is 2.9, tests have been done to:
@@ -126,7 +126,6 @@ Some variarations of the build matrix do not work. These are the variations and 
 | alpine | Only RPM and DPKG is supported by Microsoft. |
 | amazonlinux | Dependency not available: ansible-role-auditd |
 | archlinux | Only RPM and DPKG is supported by Microsoft. |
-| centos:8 | Python is not configured or Python does not support ctypes on this system. |
 | ubuntu | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |
 | debian | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |
 

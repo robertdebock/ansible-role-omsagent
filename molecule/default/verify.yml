@@ -5,5 +5,16 @@
   gather_facts: no
 
   tasks:
-    - name: check if connection still works
-      ping:
+    - name: check version
+      command: /opt/omi/bin/{{ item }} --version
+      loop:
+        - omiagent
+        - omiconfigeditor
+        - omigen
+        - omireg
+        - omiserver
+
+    - name: check help
+      command: /opt/omi/bin/{{ item }} --help
+      loop:
+        - omicli

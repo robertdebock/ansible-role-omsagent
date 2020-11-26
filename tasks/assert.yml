@@ -1,4 +1,5 @@
 ---
+
 - name: test if omsagent_version is set correctly
   assert:
     that:

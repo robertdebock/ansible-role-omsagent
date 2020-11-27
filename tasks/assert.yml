@@ -4,40 +4,47 @@
   assert:
     that:
       - omsagent_version is defined
+      - omsagent_version is string
     quiet: yes
 
 - name: test if omsagent_tmp is set correctly
   assert:
     that:
       - omsagent_tmp is defined
+      - omsagent_tmp is string
     quiet: yes
 
 - name: test if omsagent_owner is set correctly
   assert:
     that:
       - omsagent_owner is defined
+      - omsagent_owner is string
     quiet: yes
 
 - name: test if omsagent_group is set correctly
   assert:
     that:
       - omsagent_group is defined
+      - omsagent_group is string
     quiet: yes
 
 - name: test if omsagent_id is set correctly
   assert:
     that:
       - omsagent_id is defined
+      - omsagent_id is string
     quiet: yes
 
 - name: test if omsagent_shared_key is set correctly
   assert:
     that:
       - omsagent_shared_key is defined
+      - omsagent_shared_key is string
     quiet: yes
 
 - name: test if omsagent_domain is set correctly
   assert:
     that:
       - omsagent_domain is defined
+      - omsagent_domain is string
     quiet: yes

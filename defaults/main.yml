@@ -24,7 +24,7 @@ omsagent_shared_key: ""
 # For azure monitoring log Analytics workspace in Goverment cloud use:
 # omsagent_domain: opinsights.azure.command
 # leave emapy to use scripts default (omsagent_domain: opinsights.azure.com).
-omsagent_domain: []
+omsagent_domain: ""
 
 # Use [protocol://][user:password@]proxyhost[:port] as the proxy configuration.
 # omsagent_proxy: "https://username:password@proxyserver:proxyport"

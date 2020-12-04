@@ -65,16 +65,16 @@ omsagent_owner: omsagent
 omsagent_group: omiusers
 
 # Use workspace ID for automatic onboarding.
-omsagent_id: []
+omsagent_id: ""
 
 # Use as the shared key for automatic onboarding.
-omsagent_shared_key: []
+omsagent_shared_key: ""
 
 # Use as the OMS domain for onboarding.
 # For azure monitoring log Analytics workspace in Goverment cloud use:
 # omsagent_domain: opinsights.azure.command
 # leave emapy to use scripts default (omsagent_domain: opinsights.azure.com).
-omsagent_domain: []
+omsagent_domain: ""
 
 # Use [protocol://][user:password@]proxyhost[:port] as the proxy configuration.
 # omsagent_proxy: "https://username:password@proxyserver:proxyport"

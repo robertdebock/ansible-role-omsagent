@@ -2,9 +2,9 @@
 
 Install Microsoft omsagent (Log Analytics agent) on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-omsagent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-omsagent)|[![github](https://github.com/robertdebock/ansible-role-omsagent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-omsagent/actions)|[![quality](https://img.shields.io/ansible/quality/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|[![downloads](https://img.shields.io/ansible/role/d/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-omsagent.svg)](https://github.com/robertdebock/ansible-role-omsagent/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-omsagent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-omsagent)|[![github](https://github.com/robertdebock/ansible-role-omsagent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-omsagent/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-omsagent/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-omsagent)|[![quality](https://img.shields.io/ansible/quality/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|[![downloads](https://img.shields.io/ansible/role/d/43607)](https://galaxy.ansible.com/robertdebock/omsagent)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-omsagent.svg)](https://github.com/robertdebock/ansible-role-omsagent/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -84,6 +84,7 @@ omsagent_domain: ""
 
 - Access to a repository containing packages, likely on the internet.
 - A recent version of Ansible. (Tests run on the current, previous and next release of Ansible.)
+- Jinja 2.11.2 or above.
 
 ## [Status of requirements](#status-of-requirements)
 

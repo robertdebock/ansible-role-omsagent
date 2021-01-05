@@ -14,9 +14,6 @@ omsagent_tmp: /tmp
 omsagent_owner: omsagent
 omsagent_group: omiusers
 
-# Use as the shared key for automatic onboarding.
-omsagent_shared_key: ""
-
 # Use as the OMS domain for onboarding.
 # For azure monitoring log Analytics workspace in Goverment cloud use:
 # omsagent_domain: opinsights.azure.command

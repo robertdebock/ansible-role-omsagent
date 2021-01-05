@@ -28,13 +28,6 @@
       - omsagent_group is string
     quiet: yes
 
-- name: test if omsagent_id is set correctly
-  assert:
-    that:
-      - omsagent_id is defined
-      - omsagent_id is string
-    quiet: yes
-
 - name: test if omsagent_shared_key is set correctly
   assert:
     that:

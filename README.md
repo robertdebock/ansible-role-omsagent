@@ -64,9 +64,6 @@ omsagent_tmp: /tmp
 omsagent_owner: omsagent
 omsagent_group: omiusers
 
-# Use workspace ID for automatic onboarding.
-omsagent_id: ""
-
 # Use as the shared key for automatic onboarding.
 omsagent_shared_key: ""
 

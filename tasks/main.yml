@@ -7,24 +7,24 @@
   delegate_to: localhost
 
 - name: install requirements
-  package:
+  ansible.builtin.package:
     name: "{{ omsagent_requirements }}"
     state: present
 
 - name: download installation script
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ omsagent_url }}"
     dest: "{{ omsagent_tmp }}"
     mode: "755"
 
 - name: ensure directory exist
-  file:
+  ansible.builtin.file:
     path: /etc/opt/microsoft/omsagent
     state: directory
     mode: "0755"
 
 - name: set proxy configuration
-  template:
+  ansible.builtin.template:
     src: proxy.conf.j2
     dest: /etc/opt/microsoft/omsagent/proxy.conf
     owner: "{{ omsagent_owner }}"
@@ -42,10 +42,10 @@
     - wait for the script to finish
 
 - name: flush handlers
-  meta: flush_handlers
+  ansible.builtin.meta: flush_handlers
 
 - name: start and enable omid service
-  service:
+  ansible.builtin.service:
     name: omid
     state: "{{ omsagent_service_state }}"
     enabled: yes

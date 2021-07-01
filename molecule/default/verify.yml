@@ -6,7 +6,8 @@
 
   tasks:
     - name: check version
-      command: /opt/omi/bin/{{ item }} --version
+      ansible.builtin.command:
+        cmd: /opt/omi/bin/{{ item }} --version
       loop:
         - omiagent
         - omiconfigeditor
@@ -15,6 +16,7 @@
         - omiserver
 
     - name: check help
-      command: /opt/omi/bin/{{ item }} --help
+      ansible.builtin.command:
+        cmd: /opt/omi/bin/{{ item }} --help
       loop:
         - omicli

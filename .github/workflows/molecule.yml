@@ -35,8 +35,6 @@ jobs:
         config:
           - image: "enterpriselinux"
             tag: "latest"
-          - image: "opensuse"
-            tag: "latest"
     steps:
       - name: checkout
         uses: actions/checkout@v2

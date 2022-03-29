@@ -111,18 +111,6 @@ The minimum version of Ansible required is 2.10, tests have been done to:
 - The current version.
 - The development version.
 
-## [Exceptions](#exceptions)
-
-Some roles can't run on a specific distribution or version. Here are some exceptions.
-
-| variation                 | reason                 |
-|---------------------------|------------------------|
-| alpine | Only RPM and DPKG is supported by Microsoft. |
-| amazonlinux | Dependency not available: ansible-role-auditd |
-| archlinux | Only RPM and DPKG is supported by Microsoft. |
-| ubuntu | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |
-| debian | Python is not configured or Python does not support ctypes on this system, installation cannot continue. |
-
 ## [Included version(s)](#included-versions)
 
 This role [refers to a version](https://github.com/robertdebock/ansible-role-omsagent/blob/master/defaults/main.yml) released by Microsoft. Check the released version(s) here:

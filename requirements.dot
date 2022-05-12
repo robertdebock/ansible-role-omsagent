@@ -1,0 +1,17 @@
+digraph PhiloDilemma {
+  label = "Robert de Bock" ;
+  overlap=false
+  {
+    "omsagent" [fillcolor=yellow style=filled penwidth=3]
+    "robertdebock.auditd" [fillcolor=green style=filled]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.core_dependencies" [fillcolor=green style=filled]
+    "robertdebock.cron" [fillcolor=green style=filled]
+    "robertdebock.users" [fillcolor=green style=filled]
+  }
+  "omsagent" -> "robertdebock.auditd"
+  "omsagent" -> "robertdebock.bootstrap"
+  "omsagent" -> "robertdebock.core_dependencies"
+  "omsagent" -> "robertdebock.cron"
+  "omsagent" -> "robertdebock.users"
+}

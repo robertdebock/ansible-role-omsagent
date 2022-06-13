@@ -1,5 +1,7 @@
 # [omsagent](#omsagent)
 
+This role has been archived, the last distribution also started to fail.
+
 Install Microsoft omsagent (Log Analytics agent) on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
